@@ -1,0 +1,134 @@
+:root {
+    --primary-dark-cyan: hsl(185, 75%, 39%);
+    --primary-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --primary-dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --neutral-dark-gray: hsl(0, 0%, 59%);
+    --neutral-dark-gray: hsla(0, 0%, 59%, 0.4);
+    --font-kumbh-sans: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background:
+    url('../../images/bg-pattern-top.svg') top left fixed no-repeat, 
+    var(--primary-dark-cyan)
+    url('../../images/bg-pattern-bottom.svg') no-repeat fixed bottom right;
+    background-size: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    max-height: 375px;
+}
+
+.perfil_img__content{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 38%;
+    border: 3px solid white;
+}
+
+.img_card__content {
+    border-radius: 10px 10px 0 0;
+    height: 40%;
+}
+
+.perfil_info__content{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    background: white;
+    min-width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 2.5rem;
+    gap: 0.7rem;
+}
+
+.name_yo__perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stats_perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    border-top: 1px solid var(--neutral-dark-gray);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.name_perfil__content {
+    font-family: var(--font-kumbh-sans);
+    color: var(--primary-very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.yo_perfil__content{
+    font-family: var(--font-kumbh-sans);
+    color: var(--primary-dark-grayish-blue);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.country_perfil__content {
+    font-family: var(--font-kumbh-sans);
+    color: var(--primary-dark-grayish-blue);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_stat {
+    font-family: var(--font-kumbh-sans);
+    color: var(--primary-very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.description_stat {
+    font-family: var(--font-kumbh-sans);
+    color: var(--primary-dark-grayish-blue);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
